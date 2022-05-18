@@ -4,39 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/style.css">
     <title>Stark Gym</title>
 </head>
 
 <body>
-    <div class="main-div-contacto">
+ 
     <header class="main-header">
-        <nav class="main-nav">
-            <a href="../index.html"><img class="logonav" src="../img/logoStark.png" alt="logo" ></a>   
-            <ul>
-                      
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="actividades.html">Actividades</a>
-                </li>
-                <li>
-                    <a href="cronograma.html">Cronograma</a>
-                </li>
-                <li>
-                    <a href="planes.html">Planes</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg color-back">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">
+                <img src="../img/logoStark.png" alt="logo" class="w-25">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link color-list" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link color-list" href="./actividades.html">Actividades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link color-list" href="./cronograma.html">Cronograma</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link color-list" href="./planes.html">Planes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link color-list" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
-
-    <div class="contenido-contacto">
-    <section class="ubi">
-        <h1>Donde encontrarnos</h1>
+    <h1>Donde encontrarnos</h1>
+    <div class="contenido-contacto row">
+        <div class="ubi col-xs-12 col-md-6">
         <a href="https://www.google.com.ar/maps/place/STARK+GYM/@-31.423041,-64.1901281,19.75z/data=!4m5!3m4!1s0x9432a34aff67926b:0x955efb8ad05423f0!8m2!3d-31.4230832!4d-64.1903126" target="_blank"><img src="../img/ubicacion.png"></a>
         <ul>
             <li>
@@ -59,32 +67,47 @@
                     </li>
                 </ul>
             </li>
-
         </ul>
-    </section>
+        </div>
+        <div class="d-flex justify-content-center col-xs-12 col-md-6">
+    
     <main class="form">
-        <section>
-                <form action="#">
-                    <h2>Mándanos tu consulta rellenando el siguiente formulario</h2>
-                    <input type="text" placeholder="Nombre"><br>
-                    <input type="email" placeholder="Email"><br>
-                    <input type="text" placeholder="Asunto"><br>
-                    <input type="textarea" placeholder="Consulta"><br>
-                    <div>
-                         <p>¿Desea recibir información de futuras promociones?</p> 
-                            <div>
-                                Si
-                                <input type="radio" name="promo" value="si">
-                                No 
-                                <input type="radio" name="promo" value="No">
-                            </div> 
-                    </div>
-                    <br>
-                    <input type="reset" value="Limpiar formulario">
-                    <input type="submit" value="Enviar">                    
-                </form>           
-        </section>
-
+        <h2>Mándanos tu consulta</h2>
+        <form action="#">
+        <div class="mb-3">
+            <label class="form-label text-light">Nombre</label>
+            <input type="text" class="form-control" placeholder="Jhon Doe">  
+          </div>
+          <div class="mb-3">
+            <label class="form-label text-light">Email</label>
+            <input type="email" class="form-control" placeholder="nombre@ejemplo.com">    
+          </div>
+          <div class="mb-3">
+            <label class="form-label text-light">Asunto</label>
+            <input type="text" class="form-control" placeholder="Consulta rutina">
+          </div>
+          <div class="mb-3">
+            <label class="form-label text-light">Consulta</label>
+            <textarea class="form-control" rows="3"></textarea>
+          </div>
+          <label class="form-check-label text-light">¿Desea recibir información de futuras promociones?</label>
+          <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="promo" value="si" checked="">
+          <label class="form-check-label text-light">
+            Si
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="promo" value="no" >
+          <label class="form-check-label text-light">
+            No
+          </label>
+        </div>
+        <div>
+        <input type="reset" class="boton-form" value="Limpiar formulario">
+        <input type="submit" class="boton-form" value="Enviar">   
+        </div>
+        </form>
     </main>
     </div>
     </div>
@@ -97,6 +120,7 @@
         </figure>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 
 </html>

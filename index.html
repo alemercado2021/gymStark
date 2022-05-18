@@ -4,52 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./estilos/style.css">
     <title>Stark Gym</title>
 </head>
 <body>
-    <div class="main-div">
-    <header class="main-header">
-        <nav class="main-nav">
-            <a href="index.html" ><img class="logonav" src="./img/logoStark.png" alt="logo" ></a>            
-            <ul>                                               
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>               
-                <li>
-                    <a href="./secciones/actividades.html">Actividades</a>
-                </li>
-                <li>
-                    <a href="./secciones/cronograma.html">Cronograma</a>
-                </li>
-                <li>
-                    <a href="./secciones/planes.html">Planes</a>
-                </li>
-                <li>
-                    <a href="./secciones/contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main class="main-index">
-        <h1>Conoce Stark Gym por dentro</h1>
-        <section class="vid">            
-            <div class="video">
-            <iframe  src="https://www.youtube.com/embed/EZGThE9cQlU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </section>
-    </main>
+  <header class="main-header">
+  <nav class="navbar navbar-expand-lg color-back">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="./img/logoStark.png" alt="logo" class="w-25">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link color-list" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link color-list" href="./secciones/actividades.html">Actividades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link color-list" href="./secciones/cronograma.html">Cronograma</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link color-list" href="./secciones/planes.html">Planes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link color-list" href="./secciones/contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </header>
+  <h1>Conoce Stark Gym por dentro</h1>
+  <main>
+      
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/nuevosequipos.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/graciasxstark.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/tomaelcontrol.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
-</div>
-    <footer class="main-footer">
-        <h3>Redes sociales</h3>
-        <figure>
-            <a href="https://www.instagram.com/stark_gym/?hl=es"><img src="./img/instagram.png" alt="perfil instagram" ></a>
-            <a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.link%2F6qoirr&e=ATOtLItlM-lCrPsqf0bvOfsGC7mE7n6rycPRZYyBVLG3yqDh71y9w97VA30esAd6tvObH-x3BEJIn5oxgUIqcQ&s=1"><img src="./img/whatsapp.png" alt="whatsapp" ></a>
-            <a href="https://www.facebook.com/STARKGYMvelez/"><img src="./img/facebook.png" alt="perfil facebook" ></a>
-        </figure>
-    </footer>
-    
+  </main>
+
+
+  <footer class="main-footer">
+      <h3>Redes sociales</h3>
+      <figure>
+          <a href="https://www.instagram.com/stark_gym/?hl=es"><img src="./img/instagram.png" alt="perfil instagram" ></a>
+          <a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.link%2F6qoirr&e=ATOtLItlM-lCrPsqf0bvOfsGC7mE7n6rycPRZYyBVLG3yqDh71y9w97VA30esAd6tvObH-x3BEJIn5oxgUIqcQ&s=1"><img src="./img/whatsapp.png" alt="whatsapp" ></a>
+          <a href="https://www.facebook.com/STARKGYMvelez/"><img src="./img/facebook.png" alt="perfil facebook" ></a>
+      </figure>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 </body>
 </html>
