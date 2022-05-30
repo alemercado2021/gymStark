@@ -1,0 +1,18 @@
+/*FOOTER*/
+footer {
+    background-image: linear-gradient(to top, rgb(33, 50, 94),rgb(62, 73, 122) );   
+    color: rgb(240, 240, 240);
+    padding: 10px;
+    text-align: center;
+    bottom: 0px;
+}
+
+footer figure img{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+footer figure img:hover{
+    border: 3px solid rgb(241, 208, 10);
+    border-radius: 15px;
+}
