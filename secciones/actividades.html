@@ -4,44 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/style.css">
     <title>Stark Gym</title>
 </head>
 
 <body>
 
-    <header class="main-header">
-        <nav class="main-nav">
-            <a href="../index.html"><img class="logonav" src="../img/logoStark.png" alt="logo" ></a>   
-            <ul>
-                      
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="actividades.html">Actividades</a>
-                </li>
-                <li>
-                    <a href="cronograma.html">Cronograma</a>
-                </li>
-                <li>
-                    <a href="planes.html">Planes</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+    <header class="header-planes">
+        <nav class="navbar navbar-expand-lg color-back">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">
+                <img src="../img/logoStark.png" alt="logo" class="w-25">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link color-list" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link color-list" href="./actividades.html">Actividades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link color-list" href="./cronograma.html">Cronograma</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link color-list" href="./planes.html">Planes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link color-list" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
-    <footer>
+    <h1>ACTIVIDADES</h1>
+    <class="mactividades">
+        <div class="contenedorActividad">
+            <div class="actividad">
+                <img src="../img/funcional.png">
+                <div class="actividadContenido">
+                <h4>FUNCIONAL</h4>
+                <p>Se basa en realizar ejercicios que se adaptan a los movimientos naturales del cuerpo humano para trabajar de forma global músculos y articulaciones.</p>
+                </div>
+            </div>
+            <div class="actividad">
+                <img src="../img/gap.png">
+                <div class="actividadContenido">
+                <h4>GAP</h4>
+                <p>Rutina de tonificación en la que se trabajan estas áreas en las que están implicados algunos de los músculos más grandes del cuerpo y aquellos que sostienen la espalda y la postura.</p>
+                </div>
+            </div>
+            <div class="actividad">
+                <img src="../img/musculacion.png">
+                <div class="actividadContenido">
+                <h4>MUSCULACION</h4>
+                <p>La musculación es una actividad orientada a la tonificación y desarrollo muscular, mediante el uso de máquinas y pesas.</p>
+                </div>
+            </div>
+            <div class="actividad">
+                <img src="../img/spinning.png">
+                <div class="actividadContenido">
+                <h4>SPINNING</h4>
+                <p>Se practica sobre una bicicleta estática y consiste en alternar la intensidad de la pedaleada en sucesivas secuencias de tiempo.</p>
+                </div>
+            </div>
+            <div class="actividad">
+                <img src="../img/ritmos.png">
+                <div class="actividadContenido">
+                <h4>RITMOS</h4>
+                <p>Las actividades rítmicas son movimientos del cuerpo que se realizan a través de diferentes sonidos. Divierten y mejoran la salud de los practicantes.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-planes">
         <h3>Redes sociales</h3>
         <figure>
             <a href="https://www.instagram.com/stark_gym/?hl=es"><img src="../img/instagram.png" alt="perfil instagram" ></a>
             <a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.link%2F6qoirr&e=ATOtLItlM-lCrPsqf0bvOfsGC7mE7n6rycPRZYyBVLG3yqDh71y9w97VA30esAd6tvObH-x3BEJIn5oxgUIqcQ&s=1"><img src="../img/whatsapp.png" alt="whatsapp" ></a>
-            <a href="https://www.facebook.com/STARKGYMvelez/"><img src="../img/facebook.png" alt="perfil facebook"></a>
+            <a href="https://www.facebook.com/STARKGYMvelez/"><img src="../img/facebook.png" alt="perfil facebook" ></a>
         </figure>
-
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 
 </html>
+
+
+
