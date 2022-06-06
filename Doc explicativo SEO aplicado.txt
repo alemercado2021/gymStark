@@ -1,0 +1,3 @@
+SEO aplicado en el proyecto:
+-Se agregó a todas las secciones un meta description con su respectivo contenido resumiendo la información de la sección.
+-Se agregó a todas las secciones un meta keywords con 5 palabras claves dependiendo del contenido de la sección.

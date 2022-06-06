@@ -5,19 +5,61 @@ footer {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#21325e), to(#3e497a));
   background-image: linear-gradient(to top, #21325e, #3e497a);
   color: #f0f0f0;
-  padding: 10px;
+  margin-top: 10px;
   text-align: center;
+  bottom: 0;
+}
+
+.containerFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   bottom: 0px;
+  width: 100%;
 }
 
 footer figure img {
   max-width: 50px;
   max-height: 50px;
+  border-radius: 15px;
 }
 
 footer figure img:hover {
   border: 3px solid #f1d00a;
-  border-radius: 15px;
+}
+
+.redes--facebook {
+  background-color: #4267B2;
+}
+
+.redes--instagram {
+  background-color: #F56040;
+}
+
+.redes--whatsapp {
+  background-color: #25D366;
+}
+
+.configTarjetas, .actividad, .tarjeta {
+  height: 430px;
+  width: 330px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  color: #f0f0f0;
+  background-color: #21325e;
+}
+
+.configTarjetas img, .actividad img, .tarjeta img {
+  height: 300px;
+  width: 300px;
 }
 
 * {
@@ -28,6 +70,7 @@ footer figure img:hover {
 body {
   background-color: #3e497a;
   font-family: 'Poppins', sans-serif;
+  position: relative;
 }
 
 /*----------------------------------------------------------------*/
@@ -59,6 +102,40 @@ h1 {
 h2 {
   color: #f0f0f0;
   text-align: center;
+}
+
+/*CRONOGRAMA*/
+.cronograma {
+  text-align: center;
+  padding-top: 10px;
+}
+
+ol {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30px 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 30px 1fr 1fr 1fr 1fr 1fr;
+  color: #f0f0f0;
+  padding: 10px;
+}
+
+ol li {
+  border-bottom: 1px solid #f1d00a;
+  border-right: 1px solid #f1d00a;
+  font-size: x-small;
+  background-color: #21325e;
+}
+
+.dayName, .horario {
+  background-color: #f1d00a;
+  font-weight: bold;
+  color: #21325e;
+}
+
+.firstDay {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
 }
 
 /*CONTACTO*/
@@ -93,7 +170,7 @@ h2 {
 .contenedorActividad {
   width: 100%;
   max-width: 1200px;
-  height: 430px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,24 +181,6 @@ h2 {
           justify-content: center;
   margin: auto;
   margin-bottom: 40px;
-}
-
-.actividad {
-  width: 330px;
-  height: 430px;
-  border-radius: 8px;
-  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  margin: 20px;
-  text-align: center;
-  color: #f0f0f0;
-  background-color: #21325e;
-}
-
-.actividad img {
-  width: 300px;
-  height: 300px;
 }
 
 .actividad:hover {
@@ -143,7 +202,7 @@ h2 {
 .contenedor {
   width: 100%;
   max-width: 1200px;
-  height: 430px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,24 +213,6 @@ h2 {
           justify-content: center;
   margin: auto;
   margin-bottom: 40px;
-}
-
-.tarjeta {
-  width: 330px;
-  height: 430px;
-  border-radius: 8px;
-  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  margin: 20px;
-  text-align: center;
-  color: #f0f0f0;
-  background-color: #21325e;
-}
-
-.tarjeta img {
-  width: 300px;
-  height: 300px;
 }
 
 .tarjeta:hover {
@@ -217,20 +258,28 @@ h2 {
             flex-direction: column;
   }
   .actividad img {
-    width: 200px;
     height: 200px;
+    width: 200px;
   }
   .ubi iframe {
-    width: 400px;
     height: 400px;
+    width: 400px;
+  }
+  ol {
+    -ms-grid-columns: 50px 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 50px 1fr 1fr 1fr 1fr 1fr;
+    padding: 30px;
+  }
+  ol li {
+    font-size: large;
   }
 }
 
 /*----------------------------------------------------------------*/
 @media (min-width: 1024px) {
   .ubi iframe {
-    width: 500px;
     height: 500px;
+    width: 500px;
   }
 }
 

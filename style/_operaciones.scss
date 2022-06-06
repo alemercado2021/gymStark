@@ -1,0 +1,28 @@
+$redes:(
+    facebook: #4267B2, instagram: #F56040, whatsapp: #25D366,
+
+);
+
+@each $red, $color in $redes {
+    .redes--#{$red}{background-color: $color;}
+};
+
+@mixin tamaño ($width, $height) {
+    height: $height;
+    width: $width;    
+}
+
+.configTarjetas {
+    @include tamaño (330px, 430px);
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    color: $colorTxt;
+    background-color: $backgroundOscuro;
+    img{
+        @include tamaño (300px, 300px)
+    }
+}
+

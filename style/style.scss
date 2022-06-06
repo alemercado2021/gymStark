@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 @import "variables";
 @import "generales";
+@import "operaciones";
+
 *{  
     padding: 0;
     margin: 0;
@@ -10,7 +12,9 @@
 body{
     background-color: $backgroundClaro;
     font-family: 'Poppins', sans-serif;
+    position: relative;
 }
+
 /*----------------------------------------------------------------*/
 /*HEADER*/
 .color-back {
@@ -37,7 +41,32 @@ h2 {
     color: $colorTxt;
     text-align: center;
 }
-
+/*CRONOGRAMA*/
+.cronograma {
+    text-align: center;
+    padding-top: 10px;
+}
+ol {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 30px 1fr 1fr 1fr 1fr 1fr;
+    color: $colorTxt;
+    padding: 10px;
+    li{
+        border-bottom: 1px solid $detallesAmarillo;
+        border-right: 1px solid $detallesAmarillo;
+        font-size: x-small;
+        background-color: $backgroundOscuro;
+    }    
+}
+.dayName, .horario {
+    background-color: $detallesAmarillo;
+    font-weight: bold;
+    color: $backgroundOscuro;
+}
+.firstDay {
+    grid-column-start: 2;
+}
 /*CONTACTO*/
 .ubi {
     color: $colorTxt;
@@ -65,7 +94,7 @@ h2 {
 .contenedorActividad {
     width: 100%;
     max-width: 1200px;
-    height: 430px;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -73,19 +102,8 @@ h2 {
     margin-bottom: 40px;
 }
 .actividad{
-    width: 330px;
-    height: 430px;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    margin: 20px;
-    text-align: center;
-    color: $colorTxt;
-    background-color: $backgroundOscuro;
-    img{
-        width: 300px;
-        height: 300px;
-    }
+    
+    @extend.configTarjetas;
 }
 .actividad:hover{
     transform: translateY(-15px);
@@ -100,7 +118,7 @@ h2 {
 .contenedor{
     width: 100%;
     max-width: 1200px;
-    height: 430px;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -109,19 +127,7 @@ h2 {
 }
 
 .tarjeta{
-    width: 330px;
-    height: 430px;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    margin: 20px;
-    text-align: center;
-    color: $colorTxt;
-    background-color: $backgroundOscuro;
-    img{
-        width: 300px;
-        height: 300px;
-    }
+    @extend.configTarjetas;
 }
 
 
@@ -153,22 +159,24 @@ h2 {
         flex-direction: column;
     }
     .actividad img{
-        width: 200px;
-        height: 200px;
+        @include tamaño (200px, 200px)
     }
   
     .ubi iframe {
-        width: 400px;
-        height: 400px;
+        @include tamaño (400px, 400px)
     }
-
+    ol {
+        grid-template-columns: 50px 1fr 1fr 1fr 1fr 1fr;
+        padding: 30px;
+        li{
+            font-size: large;
+        }    
+    }
 }
 /*----------------------------------------------------------------*/
 @media (min-width:1024px) {
     .ubi iframe {
-        width: 500px;
-        height: 500px;
+        @include tamaño (500px, 500px)
     }
-    
 }
 /*----------------------------------------------------------------*/
