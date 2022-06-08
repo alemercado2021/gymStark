@@ -20,9 +20,8 @@ $redes:(
     margin: 20px;
     text-align: center;
     color: $colorTxt;
-    background-color: $backgroundOscuro;
+    background-color: $backgroundClaro;
     img{
         @include tamaño (300px, 300px)
     }
 }
-

@@ -1,11 +1,12 @@
-/*FOOTER*/
 footer {
-    background-image: linear-gradient(to top, rgb(33, 50, 94),rgb(62, 73, 122) );   
+    background-image: linear-gradient(to top, rgb(62, 73, 122),rgb(33, 50, 94) );   
     color: rgb(240, 240, 240);
     margin-top: 10px;
     text-align: center;
     bottom: 0;
+    height: 150px;
 }
+
 .containerFooter {
     display: flex;
     flex-direction: column;

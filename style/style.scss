@@ -10,27 +10,31 @@
 }
 
 body{
-    background-color: $backgroundClaro;
+    background-color: $backgroundOscuro;
     font-family: 'Poppins', sans-serif;
     position: relative;
 }
 
-/*----------------------------------------------------------------*/
-/*HEADER*/
-.color-back {
-    background-color: $backgroundOscuro;
+.tamañoBody{
+    min-height: calc(100vh - 50px - 120px)
 }
+
+.color-back {
+    background-color: $backgroundClaro;
+}
+
 .navbar {
     border-bottom: 2px solid $detallesAmarillo;
 }
+
 .color-list{
     color: $colorTxt;
 }
+
 .color-list:hover{
     color: $detallesAmarillo;
 }
-/*----------------------------------------------------------------*/
-/*CONTENIDO*/
+
 h1 {
     color: $colorTxt;
     text-align: center;
@@ -41,11 +45,12 @@ h2 {
     color: $colorTxt;
     text-align: center;
 }
-/*CRONOGRAMA*/
+
 .cronograma {
     text-align: center;
     padding-top: 10px;
 }
+
 ol {
     list-style: none;
     display: grid;
@@ -56,23 +61,25 @@ ol {
         border-bottom: 1px solid $detallesAmarillo;
         border-right: 1px solid $detallesAmarillo;
         font-size: x-small;
-        background-color: $backgroundOscuro;
+        background-color: $backgroundClaro;
     }    
 }
+
 .dayName, .horario {
     background-color: $detallesAmarillo;
     font-weight: bold;
-    color: $backgroundOscuro;
+    color: $backgroundClaro;
 }
+
 .firstDay {
     grid-column-start: 2;
 }
-/*CONTACTO*/
+
 .ubi {
     color: $colorTxt;
     text-align: center;
-    ul li {
-        list-style: none;
+    li {
+        list-style: none;;
     }
 }
 
@@ -85,7 +92,7 @@ ol {
     background-color: blue;
     color: $colorTxt;
 }
-/*ACTIVIDADES*/
+
 .mactividades{
     display: flex;
     flex-wrap: wrap;
@@ -101,15 +108,16 @@ ol {
     margin: auto;
     margin-bottom: 40px;
 }
+
 .actividad{
-    
     @extend.configTarjetas;
 }
+
 .actividad:hover{
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.5)
 }
-/*PLANES*/
+
 .mplanes {
     display: flex;
     flex-wrap: wrap;
@@ -130,22 +138,18 @@ ol {
     @extend.configTarjetas;
 }
 
-
 .tarjeta:hover{
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.5)
 }
-/*----------------------------------------------------------------*/
-@media (min-width:320px) {
 
-}
-/*----------------------------------------------------------------*/
 @media (min-width:768px) {
     .contenedor{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .actividad{
         display: flex;
         justify-content: flex-start;
@@ -154,10 +158,12 @@ ol {
         height: 130px;
         
     }
+
     .actividadContenido{
         display: flex;
         flex-direction: column;
     }
+
     .actividad img{
         @include tamaño (200px, 200px)
     }
@@ -173,10 +179,9 @@ ol {
         }    
     }
 }
-/*----------------------------------------------------------------*/
+
 @media (min-width:1024px) {
     .ubi iframe {
         @include tamaño (500px, 500px)
     }
 }
-/*----------------------------------------------------------------*/
