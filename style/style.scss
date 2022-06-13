@@ -46,6 +46,18 @@ h2 {
     text-align: center;
 }
 
+.introduccion {
+    color: $colorTxt;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 10px 10px 10px;
+    img {
+        @include tamaño (200px, 125px);
+        border: solid $detallesAmarillo 3px;
+    }
+}
+
 .cronograma {
     text-align: center;
     padding-top: 10px;
@@ -150,6 +162,17 @@ ol {
         justify-content: center;
     }
 
+    .introduccion {
+        color: $colorTxt;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: x-large;
+        img {
+            @include tamaño (400px, 250px)
+        }
+    }
+
     .actividad{
         display: flex;
         justify-content: flex-start;
@@ -181,6 +204,10 @@ ol {
 }
 
 @media (min-width:1024px) {
+    .introduccion {
+        font-size: xx-large;
+    }
+
     .ubi iframe {
         @include tamaño (500px, 500px)
     }
