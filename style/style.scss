@@ -55,6 +55,7 @@ h2 {
     img {
         @include tamaño (200px, 125px);
         border: solid $detallesAmarillo 3px;
+        border-radius: 5px;
     }
 }
 
@@ -85,6 +86,10 @@ ol {
 
 .firstDay {
     grid-column-start: 2;
+}
+
+.row {
+    margin-right: 0px;
 }
 
 .ubi {
@@ -119,6 +124,9 @@ ol {
     justify-content: center;
     margin: auto;
     margin-bottom: 40px;
+    p {
+        font-size: small
+    }
 }
 
 .actividad{
@@ -170,6 +178,12 @@ ol {
         font-size: x-large;
         img {
             @include tamaño (400px, 250px)
+        }
+    }
+
+    .contenedorActividad {
+        p {
+            font-size: medium
         }
     }
 

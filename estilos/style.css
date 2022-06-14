@@ -30,19 +30,7 @@ footer figure img {
 }
 
 footer figure img:hover {
-  border: 3px solid #f1d00a;
-}
-
-.redes--facebook {
-  background-color: #4267B2;
-}
-
-.redes--instagram {
-  background-color: #F56040;
-}
-
-.redes--whatsapp {
-  background-color: #25D366;
+  outline: 3px solid #f1d00a;
 }
 
 .configTarjetas, .actividad, .tarjeta {
@@ -124,6 +112,7 @@ h2 {
   height: 125px;
   width: 200px;
   border: solid #f1d00a 3px;
+  border-radius: 5px;
 }
 
 .cronograma {
@@ -157,6 +146,10 @@ ol li {
 .firstDay {
   -ms-grid-column: 2;
       grid-column-start: 2;
+}
+
+.row {
+  margin-right: 0px;
 }
 
 .ubi {
@@ -200,6 +193,10 @@ ol li {
           justify-content: center;
   margin: auto;
   margin-bottom: 40px;
+}
+
+.contenedorActividad p {
+  font-size: small;
 }
 
 .actividad:hover {
@@ -268,6 +265,9 @@ ol li {
   .introduccion img {
     height: 250px;
     width: 400px;
+  }
+  .contenedorActividad p {
+    font-size: medium;
   }
   .actividad {
     display: -webkit-box;
